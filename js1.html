@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luas dan Keliling</title>
+</head>
+<body>
+    <script>
+        function hasil(){
+            const PHI = 3.14;
+            let jr = document.getElementById("jari").value;
+            //console.log ("bilangan pertama :" + jr)
+            let luas = PHI * jr * jr;
+            let kelliling = 2.0 * PHI * jr;
+            //console.log ("luasnya :" + luas);
+            //console.log ("kelilingnya :" + kelliling);
+            let habis = document.getElementById("akhir");
+            habis.innerHTML = "luas : " + luas + "\nKeliling : " + kelliling
+        }
+    </script>
+    <h3>
+        Menghitung Luas dan Keliling Lingkaran
+    </h3>
+    <div>
+        Masukan Jari-Jari Lingkaran :
+        <input type="number" value="" id="jari">
+    </div>
+    <br>
+    <div>
+        <button onclick="hasil()">Hasil</button>
+    </div>
+    <br>
+    <div>
+        Hasil : <span id="akhir"></span>
+    </div>
+</body>
+</html>
